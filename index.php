@@ -5,7 +5,7 @@ echo
 
 <html>
   <head>
-  <link rel="stylesheet" href="/lab7.css">
+  <link rel="stylesheet" href="lab7.css">
 
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Baloo Bhai">

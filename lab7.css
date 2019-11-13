@@ -1,0 +1,137 @@
+
+
+/*Added Transition effects for every level*/
+body
+{
+  transition: background-color 0.5s ease;
+	background-color: #555;
+	border: 2px solid black;
+	font-size: 38px;
+
+
+}
+
+#gameSpace
+{
+	margin: 10px;
+	padding: 10px;
+
+}
+
+
+#result
+{
+}
+
+#level
+{
+	color: white;
+	margin-left: 5px;	
+}
+
+#goal
+{
+	color: white;		
+}
+
+
+#userinput
+{
+	color:purple;	
+}
+
+
+.text { 
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  color: white;
+
+}
+
+
+/*pretty buttons*/
+.restart {
+  box-shadow:inset 0px 1px 0px 0px #cf866c;
+  background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color:#d0451b;
+  border-radius:3px;
+  border:1px solid #942911;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:13px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #854629;
+}
+.restart:hover {
+  background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color:#bc3315;
+}
+.restart:active {
+  position:relative;
+  top:1px;
+}
+
+
+.next {
+  box-shadow:inset 0px 1px 0px 0px #caefab;
+  background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color:#77d42a;
+  border-radius:6px;
+  border:1px solid #268a16;
+  display:inline-block;
+  cursor:pointer;
+  color:#306108;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #aade7c;
+}
+.next:hover {
+  background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color:#5cb811;
+}
+.next:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+
+/* Added a blinking curso to make seeing typed text easier */
+
+.text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  right: -10dddpx;
+
+  display: inline-block;
+  background-color: red;
+  vertical-align: top;
+  width: 10px;
+  height: 24px;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
